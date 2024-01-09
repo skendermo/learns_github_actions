@@ -16,3 +16,5 @@ if score < THRESHOLD:
 
 print("something bla")
 
+sys.exit(0)
+
