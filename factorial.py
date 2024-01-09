@@ -3,7 +3,6 @@ import time
 final_list = []
 
 def factorial(n):
-
     time.sleep(.1)
 
     factorial = 1
@@ -22,7 +21,7 @@ def sum_factorial():
 
     result=sum(final_list)
 
-    print("Final SUM is {result}")
+    print(f"Final SUM is {result}")
 
     return result
 
