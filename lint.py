@@ -13,3 +13,6 @@ if score < THRESHOLD:
     """Linter message."""
     print("Linter failed: Score < threshold value")
     sys.exit(1)
+
+print("something")
+
