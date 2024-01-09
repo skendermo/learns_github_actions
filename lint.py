@@ -1,18 +1,16 @@
-import sys 
-
-from pylint import lint  
+import sys
+from pylint import lint
 
 THRESHOLD = 5
 
-run = lint.Run(["factorial.py"]) 
+run = lint.Run(["factorial.py"])
 
-score = run.linter.stats["global_note"]  
+score = run.linter.stats["global_note"]
 
-if score < THRESHOLD: 
+if score < THRESHOLD:
 
-    print("Linter failed: Score < threshold value") 
+    print("Linter failed: Score < threshold value")
 
-    sys.exit(1) 
+    sys.exit(1)
 
-
-sys.exit(0) 
+sys.exit(0)
