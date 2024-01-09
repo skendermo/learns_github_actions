@@ -1,27 +1,27 @@
-import time
+import time   
 
-final_list = []
+final_list = []    
 
-def factorial(n):
-    time.sleep(.1)
+def factorial(n):   
 
-    factorial = 1
+    time.sleep(.1)   
 
-    for i in range(1,n+1):
+    factorial = 1   
 
-        factorial = factorial * i
+    for i in range (1,n+1):   
+        factorial = factorial * i   
 
-    return factorial
+    return factorial     
 
-def sum_factorial():
+def sum_factorial():  
 
-    for i in range(50):
+    for i in range(50):   
 
-        final_list.append(factorial(i))
+        final_list.append(factorial(i))    
 
-    result=sum(final_list)
+    result=sum(final_list)    
 
-    print(f"Final SUM is {result}")
+    print("Final SUM = {}".format(result)) 
 
     return result
 
