@@ -1,13 +1,13 @@
 import sys
 from pylint import lint
 
-THRESHOLD = 0
+THRESHOLD = 5
 
 run = lint.Run(["factorial.py"])
 
 score = run.linter.stats["global_note"]
 
-if score < THRESHOLD:
+if score > THRESHOLD:
     """Linter message."""
     print("Linter failed: Score < threshold value")
 
